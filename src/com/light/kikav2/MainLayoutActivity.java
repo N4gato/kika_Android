@@ -3,13 +3,19 @@ package com.light.kikav2;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.widget.TextView;
 
 public class MainLayoutActivity extends Activity {
 
+	
+	TextView tv1;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main_layout);
+		tv1 = (TextView) findViewById(R.id.tv1);
+		tv1.setText("Working");
 	}
 
 	@Override
